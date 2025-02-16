@@ -19,7 +19,7 @@ from task_dispatcher import (
 app = FastAPI()
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-DATA_DIR = Path(\data)
+DATA_DIR = "data/"
 
 def is_valid_path(file_path: str) -> bool:
     abs_path = os.path.abspath(file_path)
